@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>echarts</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            padding: 60px;
+        }
+        .chart-container {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chart-container">
+            <div id="basic_bar" style="width: 100%; height: 280px;"></div>
+        </div>
+        <div class="chart-container">
+            <div id="stack_bar" style="width: 100%; height: 280px;"></div>
+        </div>
+        <div class="chart-container">
+            <div id="line_bar" style="width: 100%; height: 280px;"></div>
+        </div>
+        <div class="chart-container">
+            <div id="line_two_bars" style="width: 100%; height: 280px;"></div>
+        </div>
+    </div>
+
+    <!-- echarts script -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <!-- <script src="echarts-source/echarts.min.js"></script> -->
+    <script src="echarts-source/custom-style/basic-bar.js"></script>
+    <script src="echarts-source/custom-style/stack-bar.js"></script>
+    <script src="echarts-source/custom-style/line-bar.js"></script>
+    <script src="echarts-source/custom-style/line-twobar.js"></script>
+</body>
+</html>
