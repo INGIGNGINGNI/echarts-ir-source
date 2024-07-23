@@ -12,31 +12,43 @@
             box-sizing: border-box;
         }
         .container {
+            width: 100%;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr 1fr;
             gap: 40px;
             padding: 60px;
+            @media (max-width: 767px) {
+                grid-template-columns: auto;
+                padding: 30px;
+            }
         }
         .chart-container {
             width: 100%;
+            .chart {
+                @media (max-width: 767px) {
+                    width: auto;
+                } 
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="chart-container">
-            <div id="basic_bar" style="width: 100%; height: 280px;"></div>
+            <div id="basic_bar" class="chart" style="width: 100%; height: 280px;"></div>
         </div>
         <div class="chart-container">
-            <div id="stack_bar" style="width: 100%; height: 280px;"></div>
+            <div id="stack_bar" class="chart" style="width: 100%; height: 280px;"></div>
         </div>
         <div class="chart-container">
-            <div id="line_bar" style="width: 100%; height: 280px;"></div>
+            <div id="line_bar" class="chart" style="width: 100%; height: 280px;"></div>
         </div>
         <div class="chart-container">
-            <div id="line_two_bars" style="width: 100%; height: 280px;"></div>
+            <div id="line_two_bars" class="chart" style="width: 100%; height: 280px;"></div>
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- echarts script -->
     <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>

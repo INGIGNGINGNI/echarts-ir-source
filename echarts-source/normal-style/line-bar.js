@@ -103,13 +103,13 @@ var line_baroption = {
                 show: true,
                 position: 'top',
                 textStyle: {
-                    fontSize: 10,
+                    fontSize: window.innerWidth < 425 ? 8 : 10,
                     fontFamily: 'FC Minimal, sans-serif',
                     color: '#333'
                 }
             },
             yAxisIndex: 1,
-            barWidth: 40,
+            barWidth: window.innerWidth < 767 ? 20 : 40,
             tooltip: {
                 valueFormatter: function (value) {
                     return value + ' บาท';

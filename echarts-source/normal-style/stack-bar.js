@@ -84,12 +84,12 @@ var stack_baroption = {
                 show: true,
                 position: 'inside',
                 textStyle: {
-                    fontSize: 10,
+                    fontSize: window.innerWidth < 425 ? 8 : 10,
                     fontFamily: 'FC Minimal, sans-serif',
                     color: '#FFF'
                 }
             },
-            barWidth: 40,
+            barWidth: window.innerWidth < 767 ? 20 : 40,
             color: '#3BDC93'
         },
         {
@@ -123,12 +123,12 @@ var stack_baroption = {
                 show: true,
                 position: 'inside',
                 textStyle: {
-                    fontSize: 10,
+                    fontSize: window.innerWidth < 425 ? 8 : 10,
                     fontFamily: 'FC Minimal, sans-serif',
                     color: '#FFF'
                 }
             },
-            barWidth: 40,
+            barWidth: window.innerWidth < 767 ? 20 : 40,
             color: '#00D2FF'
         },
         {
@@ -166,12 +166,12 @@ var stack_baroption = {
                 show: true,
                 position: 'inside',
                 textStyle: {
-                    fontSize: 10,
+                    fontSize: window.innerWidth < 425 ? 8 : 10,
                     fontFamily: 'FC Minimal, sans-serif',
                     color: '#FFF'
                 }
             },
-            barWidth: 40,
+            barWidth: window.innerWidth < 767 ? 20 : 40,
             color: '#A76CF4'
         }
     ],

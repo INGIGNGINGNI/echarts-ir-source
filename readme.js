@@ -156,3 +156,9 @@ var textstyle = {
         fontSize: 18     // ขนาดฟอนต์
     },
 }
+
+'หากต้องการกำหนดค่าของ option ให้รองรับ responsive สามารถใช้ฟังก์ชันในการตรวจสอบขนาดหน้าจอได้ตามตัวอย่าง ดังนี้'
+var responsive = {
+    barWidth: window.innerWidth < 767 ? 20 : 40,
+    // กำหนด barWidth = 40 แต่ถ้าหากขนาดหหน้าจอน้อยกว่า 767px barWidth = 20
+}

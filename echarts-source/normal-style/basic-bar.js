@@ -1,4 +1,3 @@
-///////////////////////////////////////// chart แบบปกติ ไม่ได้ใส่ style ///////////////////////////////////////
 var basic_bar = echarts.init(document.getElementById('basic_bar'));
 var basic_baroption = {
     title: {
@@ -84,17 +83,18 @@ var basic_baroption = {
                 show: true,
                 position: 'top',
                 textStyle: {
-                    fontSize: 10,
+                    fontSize: window.innerWidth < 425 ? 8 : 10,
                     fontFamily: 'FC Minimal, sans-serif',
                     color: '#333'
                 }
             },
-            barWidth: 40,
+            barWidth: window.innerWidth < 767 ? 20 : 40,
             color: '#FFD461'         
         },
     ]
 };
 basic_bar.setOption(basic_baroption);
+
 window.addEventListener('resize', function () {
     basic_bar.resize();
 });
