@@ -4,7 +4,7 @@
 
 '1. Title (title) การตั้งค่าหัวข้อของ chart'
 
-var title = {
+var chart = {
     title: {
         text: 'Main Title',   // ข้อความของหัวข้อหลัก
         subtext: 'Sub Title', // ข้อความของหัวข้อย่อย
@@ -28,7 +28,7 @@ var title = {
 
 '2. Tooltip (tooltip) การตั้งค่าข้อมูลแสดงเมื่อ hover ที่ข้อมูล'
 
-var tooltip = {
+var chart = {
     tooltip: {
         trigger: 'axis',      // กำหนดการทำงาน (เช่น 'item', 'axis', 'none')
         backgroundColor: 'transparent', // สีพื้นหลังของ tooltip
@@ -45,7 +45,7 @@ var tooltip = {
 
 '3. Grid (grid) การตั้งค่าขอบเขตการแสดงผลของ chart'
 
-var grid  = {
+var chart  = {
     grid: {
         left: '2%',    // ระยะห่างจากขอบด้านซ้าย
         right: '2%',   // ระยะห่างจากขอบด้านขวา
@@ -58,7 +58,7 @@ var grid  = {
 
 '4. XAxis (xAxis) การตั้งค่าการแสดงผลของแกน x'
 
-var xaxis = {
+var chart = {
     xAxis: {
         type: 'category', // ประเภทของแกน (เช่น 'category', 'value', 'time', 'log')
         boundaryGap: false, // ช่องว่างระหว่างข้อมูล
@@ -82,7 +82,7 @@ var xaxis = {
 
 '5. YAxis (yAxis) การตั้งค่าการแสดงผลของแกน y'
 
-var yaxis = {
+var chart = {
     yAxis: {
         type: 'value',   // ประเภทของแกน
         position: 'right', // ตำแหน่งของแกน
@@ -99,7 +99,7 @@ var yaxis = {
 
 '6. Legend (legend) การตั้งค่าการแสดงผลของ legend (คำอธิบายของชุดข้อมูล)'
 
-var legend = {
+var chart = {
     legend: {
         left: 'left',     // ตำแหน่งของ legend
         top: 'top',       // ตำแหน่งในแนวตั้ง
@@ -116,7 +116,7 @@ var legend = {
 
 '7. Data Zoom (dataZoom) การตั้งค่าการซูมข้อมูลใน chart'
 
-var datazoom = {
+var chart = {
     dataZoom: [
         {
             type: 'inside', // ประเภทของการซูม (เช่น 'inside', 'slider')
@@ -130,7 +130,7 @@ var datazoom = {
 
 '8. Series (series) การตั้งค่าชุดข้อมูลที่จะแสดงผลใน chart'
 
-var series = {
+var chart = {
     series: [
         {
             name: 'EA',          // ชื่อของชุดข้อมูล
@@ -147,7 +147,7 @@ var series = {
 // ////////////////////////////////////////////////////////////////////////////////////////////
 
 'text style สามารถใช้งานร่วมกันได้กับทุกๆ option เพื่อใช้ในการปรับ style ต่างๆ ของฟอนต์'
-var textstyle = {
+var chart = {
     textStyle: {          // การตั้งค่าสไตล์ของข้อความหัวข้อ
         color: '#333',    // สีของข้อความ
         fontStyle: 'normal', // รูปแบบฟอนต์ (เช่น 'normal', 'italic', 'oblique')
@@ -158,7 +158,7 @@ var textstyle = {
 }
 
 'หากต้องการกำหนดค่าของ option ให้รองรับ responsive สามารถใช้ฟังก์ชันในการตรวจสอบขนาดหน้าจอได้ตามตัวอย่าง ดังนี้'
-var responsive = {
+var chart = {
     barWidth: window.innerWidth < 767 ? 20 : 40,
     // กำหนด barWidth = 40 แต่ถ้าหากขนาดหหน้าจอน้อยกว่า 767px barWidth = 20
 }
