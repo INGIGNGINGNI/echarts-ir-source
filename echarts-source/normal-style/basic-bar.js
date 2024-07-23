@@ -80,6 +80,15 @@ var basic_baroption = {
                     }
                 }
             ],
+            label: {
+                show: true,
+                position: 'top',
+                textStyle: {
+                    fontSize: 10,
+                    fontFamily: 'FC Minimal, sans-serif',
+                    color: '#333'
+                }
+            },
             barWidth: 40,
             color: '#FFD461'         
         },

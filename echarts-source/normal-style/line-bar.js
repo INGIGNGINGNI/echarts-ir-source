@@ -99,6 +99,15 @@ var line_baroption = {
                     }
                 }
             ],
+            label: {
+                show: true,
+                position: 'top',
+                textStyle: {
+                    fontSize: 10,
+                    fontFamily: 'FC Minimal, sans-serif',
+                    color: '#333'
+                }
+            },
             yAxisIndex: 1,
             barWidth: 40,
             tooltip: {

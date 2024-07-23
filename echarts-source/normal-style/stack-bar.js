@@ -45,8 +45,8 @@ var stack_baroption = {
                     width: 0.5
                 }
             },
-            position: 'right'
-        }
+            position: 'right',
+        },
     ],
     series: [
         {
@@ -78,8 +78,17 @@ var stack_baroption = {
                     }
                 },
             ],
-            stack: 'a',
             name: 'Lorem Ipsum 1',
+            stack: 'a',
+            label: {
+                show: true,
+                position: 'inside',
+                textStyle: {
+                    fontSize: 10,
+                    fontFamily: 'FC Minimal, sans-serif',
+                    color: '#FFF'
+                }
+            },
             barWidth: 40,
             color: '#3BDC93'
         },
@@ -108,8 +117,17 @@ var stack_baroption = {
                     }
                 },
             ],
-            stack: 'b',
             name: 'Lorem Ipsum 2',
+            stack: 'b',
+            label: {
+                show: true,
+                position: 'inside',
+                textStyle: {
+                    fontSize: 10,
+                    fontFamily: 'FC Minimal, sans-serif',
+                    color: '#FFF'
+                }
+            },
             barWidth: 40,
             color: '#00D2FF'
         },
@@ -142,8 +160,17 @@ var stack_baroption = {
                     }
                 },
             ],
-            stack: 'b',
             name: 'Lorem Ipsum 3',
+            stack: 'b',
+            label: {
+                show: true,
+                position: 'inside',
+                textStyle: {
+                    fontSize: 10,
+                    fontFamily: 'FC Minimal, sans-serif',
+                    color: '#FFF'
+                }
+            },
             barWidth: 40,
             color: '#A76CF4'
         }

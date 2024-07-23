@@ -95,6 +95,15 @@ var line_two_barsoption = {
                     }
                 }
             ],
+            label: {
+                show: true,
+                position: 'top',
+                textStyle: {
+                    fontSize: 10,
+                    fontFamily: 'FC Minimal, sans-serif',
+                    color: '#333'
+                }
+            },
             barWidth: 40,
             yAxisIndex: 1,
             color: '#F7906D'
@@ -134,6 +143,15 @@ var line_two_barsoption = {
                     }
                 }
             ],
+            label: {
+                show: true,
+                position: 'top',
+                textStyle: {
+                    fontSize: 10,
+                    fontFamily: 'FC Minimal, sans-serif',
+                    color: '#333'
+                }
+            },
             barWidth: 40,
             yAxisIndex: 1,
             color: '#FFD461'
