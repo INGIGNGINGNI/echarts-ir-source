@@ -8,6 +8,7 @@ var line_two_barsoption = {
         trigger: 'axis',
     },
     legend: {
+        type: 'scroll',
         left: -5,
         top: 30,
         textStyle: {
